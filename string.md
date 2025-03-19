@@ -1,47 +1,47 @@
-# String
+# String 
 
 --------------------------------------------------------------------------------------------------------
 
-String nome = 'Renata';
+    String nome = 'Renata';
 
-nome.toUpperCase();
+    nome.toUpperCase();
 
-System.out.println(nome);
+    System.out.println(nome);
 
 ### Assim não dará certo porque a String é imutável, logo, o que está acontecendo é que está sendo criada uma nova String e essa deve ser atribuída a uma nova variável.
 
 
-String nome = 'Renata';
+    String nome = 'Renata';
 
-String nome2 = nome.toUpperCase();
+    String nome2 = nome.toUpperCase();
 
-//System.out.println(nome);
+    //System.out.println(nome);
 
-System.out.println(nome2);
+    System.out.println(nome2);
 
 ### Assim dará certo porque está sendo criada uma nova String e essa deve ser atribuída a uma nova variável.
 
 
 ----------------------------------------------------------------------------------------------------------
 
-String nome = 'Renata';
+    String nome = 'Renata';
 
-String nome2 = 'Renata';  //não está criando nova String e sim puxando por referência da String já criada.
+    String nome2 = 'Renata';  //não está criando nova String e sim puxando por referência da String já criada.
 
-System.out.println(nome == nome2);
+    System.out.println(nome == nome2);
 
-Retorno: true
+🦋  Retorno: true
 
 ### Comparação de referência dos objetos, endereços de memória, se trata de um pull (puxar) de Strings.
 
 
-String nome = 'Renata';
+    String nome = 'Renata';
 
-String nome2 = 'Renata';
+    String nome2 = 'Renata';
 
-System.out.println(nome.equals(nome2));
+    System.out.println(nome.equals(nome2));
 
-Retorno: true
+🦋  Retorno: true
 
 ### Comparação de conteúdo (valor atribuído) dos objetos.
 
@@ -54,25 +54,25 @@ Retorno: true
 Atenção: String(x) === new String(x) // false pois String é tipo primitivo e new String cria um objeto.
 
 
-String nome3 = new String ('Renata');  //objeto 1 - um endereço de memória
+    String nome3 = new String ('Renata');  //objeto 1 - um endereço de memória
 
-String nome4 = new String ('Renata');  //objeto 2 - outro endereço de memória
+    String nome4 = new String ('Renata');  //objeto 2 - outro endereço de memória
 
-System.out.println(nome3 == nome4);
+    System.out.println(nome3 == nome4);
 
-Retorno: false
+🦋  Retorno: false
 
 
 ### Comparação dos objetos em endereços de memória diferentes, não é aqui um pull (puxar) de Strings que trabalha com referência e sim criações de objetos diferentes, logo é false.
 
 
-String nome3 = new String ('Renata');
+    String nome3 = new String ('Renata');
 
-String nome4 = new String ('Renata');
+    String nome4 = new String ('Renata');
 
-System.out.println(nome3.equals(nome4));
+    System.out.println(nome3.equals(nome4));
 
-Retorno: true
+🦋  Retorno: true
 
 
 ### equals continua sendo comparação de conteúdo (valor atribuído) dos objetos.
@@ -85,15 +85,15 @@ Observação: lembre que uma String é um array, antes era de char, agora é de 
 
 ### .charAt()
 
-public satatic void main (String params []) {
+    public satatic void main (String params []) {
 
-  String nome = 'Renata';
+     String nome = 'Renata';
   
-  System.out.println(nome.charAt(0));
+    System.out.println(nome.charAt(0));
   
-}
+    }
 
-  retorno: R
+  🦋 retorno: R
   
 
   ### Acesso a uma posição do array.
@@ -102,15 +102,15 @@ public satatic void main (String params []) {
 
   ### .substring()
 
- public satatic void main (String params []) {
+    public satatic void main (String params []) {
  
-  String nome = 'Renata';
+    String nome = 'Renata';
   
-  System.out.println(nome.substring(0, 4));
+    System.out.println(nome.substring(0, 4));
   
-}
+    }
 
-  retorno: Rena
+  🦋 retorno: Rena
   
 
 ### Acesso a posição inicial e final desejada do array. A posição final é exclusivo, logo, vai de 0 até 3.
@@ -121,19 +121,19 @@ public satatic void main (String params []) {
 
 Observação: String é imutável, mas uma StringBuilder é mutável.
 
-StringBuilder a = new StringBuilder ('Renata');
+    StringBuilder a = new StringBuilder ('Renata');
 
-a.append ('Bezerra');
+    a.append ('Bezerra');
 
-System.out.println(a);
+    System.out.println(a);
 
-Retorno: RenataBezerra
+🦋 Retorno: RenataBezerra
 
 
 ### O StringBuilder é usado para tornar possível a concatenação de várias Strings.
 
 
-Fonte para consultas: https://www.baeldung.com/java-strings-concatenation
+🦋 Fonte para consultas: https://www.baeldung.com/java-strings-concatenation
 
 
 -------------------------------------------------------------------------------------------------------
@@ -144,18 +144,18 @@ Observação: A  própria classe String  fornece uma série de métodos para con
 
 ### .concat()
 
-String mensagem = "Estou".concat(" fazendo")
+    String mensagem = "Estou".concat(" fazendo")
 
-  .concat(" uma")
+    .concat(" uma")
   
-  .concat(" concatenação")
+    .concat(" concatenação")
   
-  .concat(" de")
+    .concat(" de")
   
-  .concat(" String.");
+    .concat(" String.");
   
 
-System.out.println(mensagem);
+    System.out.println(mensagem);
 
 
 -------------------------------------------------------------------------------------------------------
@@ -163,18 +163,18 @@ System.out.println(mensagem);
 
 ## concatenação simples
 
-String nome = "renata";
-String sobrenome = "bezerra";
+    String nome = "renata";
+    String sobrenome = "bezerra";
 
-System.out.println (" Seu nome é " + nome + " e seu sobrenome é " + sobrenome);
+    System.out.println (" Seu nome é " + nome + " e seu sobrenome é " + sobrenome);
 
 
 ## interpolação
 
-String nome = "renata";
-String sobrenome = "bezerra";
+    String nome = "renata";
+    String sobrenome = "bezerra";
 
-System.out.printf (" Seu nome é %s e seu sobrenome é %s" , nome, sobrenome);
+    System.out.printf (" Seu nome é %s e seu sobrenome é %s" , nome, sobrenome);
 
 -------------------------------------------------------------------------------------------------------
 
