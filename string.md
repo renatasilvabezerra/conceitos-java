@@ -161,6 +161,45 @@ System.out.println(mensagem);
 -------------------------------------------------------------------------------------------------------
 
 
+## concatenação simples
+
+String nome = "renata";
+String sobrenome = "bezerra";
+
+System.out.println (" Seu nome é " + nome + " e seu sobrenome é " + sobrenome);
+
+
+## interpolação
+
+String nome = "renata";
+String sobrenome = "bezerra";
+
+System.out.printf (" Seu nome é %s e seu sobrenome é %s" , nome, sobrenome);
+
+-------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
