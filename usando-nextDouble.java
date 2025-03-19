@@ -8,15 +8,15 @@ public class Main {
 
 	public static void main(String[] args) {
 		
-		//Separador
+		//separador
 				Locale.setDefault(Locale.US);
 		//entrada de dados
-				Scanner sc = new Scanner (System.in);
+				Scanner entrada = new Scanner (System.in);
 						
-		//Variáveis
-				double largura = sc.nextDouble();
-				double comprimento = sc.nextDouble();
-				double metroQuadrado = sc.nextDouble();
+		//variáveis
+				double largura = entrada.nextDouble();
+				double comprimento = entrada.nextDouble();
+				double metroQuadrado = entrada.nextDouble();
 		
 		double area = largura * comprimento;
 		double preco = area * metroQuadrado;
@@ -24,7 +24,7 @@ public class Main {
 		System.out.printf("AREA = %.1f%n", area);
 		System.out.printf("PRECO = %.2f%n", preco);
 		
-		sc.close();		
+		entrada.close();		
 	}
 
 }
