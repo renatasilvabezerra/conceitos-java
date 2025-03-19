@@ -14,3 +14,11 @@ Para percorrer esse array pode ser usado um Java forEach: "for" remete às estru
 
 🦋 Retorno: 10  0  0  0  0  0  0  0  0  0  0
 
+Também posso percorrer de maneira tradicional através do tamanho do array.
+
+    for (int i; i < idades.length; i++) {
+        System.out.println(idades[i]);
+    }
+
+🦋 Retorno: 10  0  0  0  0  0  0  0  0  0  0
+
