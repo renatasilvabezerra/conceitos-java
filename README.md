@@ -1,4 +1,4 @@
-# conceitos-java  ☕️
+# Conceitos Java  ☕️
 Repositório Java para consultas rápidas
 
 ## Configurações:
