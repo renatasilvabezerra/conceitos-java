@@ -16,3 +16,7 @@ Baixe o gerenciador para ser avisado sobre atualizações, aí fica interessante
 
 💻 Abrindo o New Project do IntelliJ, no Project SDK escolha a versão baixada do Java através do add JDK
 
+
+### Funcionamento do Java
+
+<img src="Imagens/img-java-funcionamento.png" width="60%">
