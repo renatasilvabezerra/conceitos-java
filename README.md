@@ -19,4 +19,4 @@ Baixe o gerenciador para ser avisado sobre atualizações, aí fica interessante
 
 ### Funcionamento do Java
 
-<img src="Imagens/img-java-funcionamento.png" width="60%">
+<img src="img-java-funcionamento.png" width="60%">
