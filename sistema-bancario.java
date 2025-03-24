@@ -1,9 +1,10 @@
-import java.util.Scanner;
+import java.util.Scanner; // precisa de entrada do usuário
 
 public class Banco {
-    private static final int LIMITE_SAQUES = 3;
+    private static final int LIMITE_SAQUES = 3;  // vai ser usado no if do método realizarSaque()
     private static final double LIMITE_SAQUE = 500.0;
-
+    // private pq o acesso é dessa class banco
+    
     /*Aqui, static indica que esses valores são compartilhados por todas as instâncias da classe Banco.
 
       Vantagens de usar static para constantes:
