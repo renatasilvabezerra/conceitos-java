@@ -4,6 +4,18 @@ public class Banco {
     private static final int LIMITE_SAQUES = 3;
     private static final double LIMITE_SAQUE = 500.0;
 
+    /*Aqui, static indica que esses valores são compartilhados por todas as instâncias da classe Banco.
+
+      Vantagens de usar static para constantes:
+
+      ---> Redução de consumo de memória: Em vez de cada instância da classe armazenar sua própria cópia dessas variáveis, todas compartilham a mesma.
+
+      ---> Facilidade de manutenção: Como são constantes (final), o valor não pode ser alterado acidentalmente.
+
+      ---> Sem necessidade de instanciar a classe: Podemos acessar diretamente com Banco.LIMITE_SAQUES, sem precisar criar um objeto.
+
+     */
+
     private double saldo = 0;
     private int numeroSaques = 0;
     private StringBuilder extrato = new StringBuilder();
